@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Regular.otf');
+    src: url('../webfonts/National-Regular.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-RegularItalic.otf');
+	src: url('../webfonts/National-RegularItalic.eot');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Regular.otf');
+    src: url('../webfonts/National-Regular.eot');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-RegularItalic.otf');
+    src: url('../webfonts/National-RegularItalic.eot');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Book.otf');
+    src: url('../webfonts/National-Book.eot');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-BookItalic.otf');
+    src: url('../webfonts/National-BookItalic.eot');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Medium.otf');
+    src: url('../webfonts/National-Medium.eot');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-MediumItalic.otf');
+    src: url('../webfonts/National-MediumItalic.eot');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Semibold.otf');
+       src: url('../webfonts/National-Semibold.eot');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-SemiboldItalic.otf');
+    src: url('../webfonts/National-SemiboldItalic.eot');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Bold.otf');
+    src: url('../webfonts/National-Bold.eot');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-BoldItalic.otf');
+    src: url('../webfonts/National-BoldItalic.eot');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Bold.otf');
+    src: url('../webfonts/National-Bold.eot');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-BoldItalic.otf');
+    src: url('../webfonts/National-BoldItalic.eot');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Extrabold.otf');
+    src: url('../webfonts/National-Extrabold.eot');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-ExtraboldItalic.otf');
+    src: url('../webfonts/National-ExtraboldItalic.eot');
+    font-weight: 800;
+    font-style: italic;
+}

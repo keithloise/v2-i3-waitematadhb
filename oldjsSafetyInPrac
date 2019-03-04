@@ -1,0 +1,163 @@
+    /*
+    var resources    = $('#resources_filter');
+    var selector_res =  $('#selector_res_filter');
+    var btn_res      = $('#btn_res_filter');
+    var btn_res_text = btn_res.find('.btn-text');
+
+    var moduletype       = $('#moduletype_filter');
+    var selector_modtype = $('#moduletype_filter #selector_modtype_filter');
+    var btn_modtype      = $('#btn_modtype_filter');
+    var btn_modtype_text = btn_modtype.find('.btn-text');
+
+    var submodule       = $('#submodule_filter');
+    var selector_submod = $('#submodule_filter #selector_submod_filter')
+    var btn_submod      = $('#btn_submod_filter');
+    var btn_submod_text = btn_submod.find('.btn-text');
+
+   */
+    /* -------------------- RESOURCES ------------------------------- */
+    $(btn_res).click(function () {
+        if($(this).hasClass('btn-clicked')) {
+            $(this).removeClass('btn-clicked');
+        } else {
+            $(this).addClass('btn-clicked');
+        }
+
+        if (selector_res.hasClass('open_res_filter')) {
+            selector_res.hide();
+            selector_res.removeClass('open_res_filter');
+        }else{
+            selector_res.fadeIn();
+            selector_res.addClass('open_res_filter');
+        }
+
+        selector_modtype.each(function () {
+            $(this).hide();
+            $(this).removeClass('open_mod_filter');
+        });
+    });
+    selector_res.find('li').each(function () {
+         $(this).click(function () {
+             var li_res_text = $(this).find('span').text();
+
+             if(li_res_text == "All") {
+                 btn_res_text.text("Please Select");
+                 btn_modtype_text.text("Please Select");
+                 btn_submod_text.text("Please Select");
+                 submodule.hide();
+                 moduletype.hide();
+             } else {
+                 btn_res_text.text(li_res_text);
+                 btn_modtype_text.text("Please Select");
+                 btn_submod_text.text("Please Select");
+                 submodule.hide();
+                 moduletype.fadeIn();
+             }
+
+             selector_res.removeClass('open_res_filter');
+             selector_res.hide();
+             btn_res.removeClass('btn-clicked');
+
+             //result
+             $('.filtered_items-wrapper .filtered-items-container').each(function () {
+                 $(this).hide();
+                 $(this).removeClass('active_resources');
+                 if($(this).data('resources') == li_res_text) {
+                     $(this).addClass('active_resources');
+                     $(this).fadeIn();
+                 }else if(li_res_text == "All") {
+                     $(this).fadeIn();
+                 }else{
+                     $(this).hide();
+                     $(this).removeClass('active_resources');
+                 }
+             });
+         });
+    });
+
+    /* -------------------- MODULE TYPE ------------------------------- */
+    btn_modtype.click(function () {
+        var selected_res = btn_res_text.text();  //---------------- Selected Resources
+
+        if($(this).hasClass('btn-clicked')) {    //---------------- If Module Type Button is Clicked
+            $(this).removeClass('btn-clicked');
+        } else {
+            $(this).addClass('btn-clicked');
+        }
+
+        selector_modtype.each(function() {
+            if($(this).data('resources') == selected_res) {
+                if($(this).hasClass('open_mod_filter')) {
+                    $(this).hide();
+                    $(this).removeClass('open_mod_filter');
+                }else{
+                    $(this).fadeIn();
+                    $(this).addClass('open_mod_filter');
+                }
+            }else{
+                $(this).hide();
+            }
+        });
+    });
+    selector_modtype.find('li').each(function() {
+        $(this).click(function(){
+            var li_mod_text = $(this).find('span').text();
+            btn_modtype_text.text(li_mod_text);
+
+            if(li_mod_text == "All") {
+                btn_modtype_text.text("Please Select");
+                btn_submod_text.text("Please Select");
+                submodule.hide();
+            } else {
+                btn_modtype_text.text(li_mod_text);
+                btn_submod_text.text("Please Select");
+                submodule.fadeIn();
+            }
+
+            selector_modtype.removeClass('open_mod_filter');
+            selector_modtype.hide();
+            btn_modtype.removeClass('btn-clicked');
+
+        });
+    });
+
+    /* -------------------- SUB-MODULE ------------------------------- */
+    btn_submod.click(function () {
+        var selected_res     = btn_res_text.text();      //---------------- Selected Resources
+        var selected_modtype = btn_modtype_text.text();  //---------------- Selected Module Type
+
+        if($(this).hasClass('btn-clicked')) {            //---------------- If Module Type Button is Clicked
+            $(this).removeClass('btn-clicked');
+        } else {
+            $(this).addClass('btn-clicked');
+        }
+
+        selector_submod.each(function(){
+            if($(this).data('resources') == selected_res && $(this).data('module') == selected_modtype) {
+                if($(this).hasClass('open_submod_filter')) {
+                    $(this).hide();
+                    $(this).removeClass('open_submod_filter');
+                }else{
+                    $(this).fadeIn();
+                    $(this).addClass('open_submod_filter');
+                }
+            }else{
+                $(this).hide();
+            }
+        });
+    });
+    selector_submod.find('li').each(function () {
+        $(this).click(function(){
+            var li_submod_text = $(this).find('span').text();
+
+            if(li_submod_text == "All") {
+                btn_submod_text.text("Please Select");
+            } else {
+                btn_submod_text.text(li_submod_text);
+            }
+
+            selector_submod.removeClass('open_submod_filter');
+            selector_submod.hide();
+            btn_submod.remove('btn-clicked');
+        });
+    });

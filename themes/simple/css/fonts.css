@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-RegularItalic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-RegularItalic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Book.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-BookItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-MediumItalic.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-SemiboldItalic.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-Extrabold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'National';
+    src: url('../webfonts/National-ExtraboldItalic.otf');
+    font-weight: 800;
+    font-style: italic;
+}
